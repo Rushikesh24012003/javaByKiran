@@ -10,6 +10,11 @@ public class BookDemo {
 		Book b1 = new Book();
 		b1.acceptData(b);
 		b1.displayData(b);
+		
+		System.out.println();
+		System.out.println("Sorted Data");
+		Book.sortData(b);
+		b1.displayData(b);
 	}
 
 }

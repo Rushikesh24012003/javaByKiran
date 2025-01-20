@@ -8,6 +8,19 @@ public class Book {
 	public String bookName , bookAuthor;
 	public int price , publishYear;
 	
+	public static void sortData(Book b[] ){
+		for(int k=0 ; k<b.length ; k++) {
+			for (int j=k+1 ; j<b.length ; j++) {
+				if(b[k].price> b[j].price) {
+					Book t = b[k];
+					b[k] = b[j];
+					b[j]=t;
+				}
+			}
+		}
+		
+	}
+	
 	public static void acceptData(Book b[]) {
 		for(int k=0 ; k<b.length ; k++) {
 			b[k] = new Book(); 

@@ -8,6 +8,19 @@ public class Employee {
 	public String employeeName , employeeDepartment;
 	public int employeeID , employeeSalary;
 	
+	public static void sortData(Employee e[] ){
+		for(int k=0 ; k<e.length ; k++) {
+			for (int j=k+1 ; j<e.length ; j++) {
+				if(e[k].employeeSalary> e[j].employeeSalary) {
+					Employee t = e[k];
+					e[k] = e[j];
+					e[j]=t;
+				}
+			}
+		}
+		
+	}
+	
 	public static void acceptData(Employee e[]) {
 		for(int k=0 ; k<e.length ; k++) {
 			e[k] = new Employee(); 

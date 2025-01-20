@@ -10,6 +10,10 @@ public class EmployeeDemo {
 		Employee e1= new Employee();
 		e1.acceptData(e);
 		e1.displayData(e);
+		System.out.println();
+		System.out.println("Sorted Data");
+		Employee.sortData(e);
+		e1.displayData(e);
 
 	}
 
