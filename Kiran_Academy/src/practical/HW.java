@@ -45,6 +45,7 @@ public class HW {
 			n++;
 			sum+=n;
 		}
-		System.out.println(n);
+		System.out.println(n
+				);
 	}
 }
